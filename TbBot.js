@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/basicBot/source/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/NikhilJangid007/Tb-Bot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -241,8 +241,8 @@
         name: "Tb Bot",
         loggedInID: null,
         scriptLink: null,
-        cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+        cmdLink: "http://pastebin.com/raw/i6NzUsdM",
+        chatLink: "https://rawgit.com/NikhilJangid007/Tb-Bot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,7 +250,7 @@
         settings: {
             botName: "Tb Bot",
             language: "english",
-            chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+            chatLink: "https://rawgit.com/NikhilJangid007/Tb-Bot/master/lang/en.json",
             scriptLink: null,
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 10, // 1-200
