@@ -301,9 +301,9 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
+            fbLink: "https://www.facebook.com/N1kh1lSharma",
             youtubeLink: null,
-            website: null,
+            website: "www.nikhilhax.com",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -2447,7 +2447,7 @@
 
             killCommand: {
                 command: 'kill',
-                rank: 'co-host',
+                rank: 'host',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
