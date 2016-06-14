@@ -155,7 +155,6 @@
     "youaredj": "\/me @%%NAME%%, you are currently DJing.",
     "eta": "\/me @%%NAME%%, you are position %%POSITION%% in the waitlist and will reach the booth in approximately %%TIME%%.",
     "facebook": "\/me follow the dev on facebook: %%LINK%%",
-    "nikpls": "\/me Nikhil pls!"
     "starterhelp": "\/me This image will get you started on plug: %%LINK%%",
     "roulettejoin": "@%%NAME%% joined the roulette! (!leave if you regret it)",
     "jointime": "\/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
