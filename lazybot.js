@@ -278,7 +278,7 @@
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: true,
+            thorCommand: true,l
             thorCooldown: 10,
             skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
@@ -301,7 +301,7 @@
             rulesLink: "http://pastebin.com/cbx3cPtX",
             themeLink: null,
             fbLink: "https://www.facebook.com/N1kh1lSharma",
-            nikPls: "Nikhil pls!"
+            youtubeLink: "https://www.youtube.com/channel/UClZRW6FRMgDb0IZ4HGjx_xQ",
             website: "www.nikhilhax.com",
             intervalMessages: [],
             messageInterval: 5,
@@ -2197,20 +2197,7 @@
                 }
             },
 
-            nikCommand: {
-                command: 'nikpls',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!lazyBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        if (typeof lazyBot.settings.nikPls === "string")
-                            API.sendChat(subChat(lazyBot.chat.nikpls, {link: lazyBot.settings.nikPls}));
-                    }
-                }
-            },
-
+            
             filterCommand: {
                 command: 'filter',
                 rank: 'bouncer',
@@ -3100,7 +3087,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!lazyBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me This bot was created by ' + botCreator + ', but is now maintained by ' + botMaintainer + ".");
+                        API.sendChat('/me This bot was created by ' + botCreator + ".");
                     }
                 }
             },
@@ -3702,6 +3689,22 @@
                     }
                 }
             },
+
+            youtubeCommand: {
+                command: 'youtube',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!lazyBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof lazyBot.settings.youtubeLink === "string")
+                            API.sendChat(subChat(lazyBot.chat.youtube, {name: chat.un, link: lazyBot.settings.youtubeLink}));
+                    }
+                }
+            }
+        }
+    };
 
     loadChat(lazyBot.startup);
 }).call(this);
