@@ -302,7 +302,7 @@
             themeLink: null,
             fbLink: "https://www.facebook.com/N1kh1lSharma",
             nikPls: "Nikhil pls!"
-            youtubeLink: "https://www.youtube.com/channel/UClZRW6FRMgDb0IZ4HGjx_xQ",
+            youtubeLink: null,
             website: "www.nikhilhax.com",
             intervalMessages: [],
             messageInterval: 5,
